@@ -22,8 +22,8 @@ public class TodoItemService
 
     public TodoItem findByIdAndUserId(Long todoItemId, Long userId) 
     {
-        return todoItemRepository.findByIdAndUserId(todoItemId, userId)
-                .orElseThrow(() -> new ResourceNotFoundException("TodoItem not found with id " + todoItemId + " and userId " + userId));
+        return todoItemRepository.findByIdAndUserId(todoItemId, userId);
+                
     }
 
     public TodoItem save(Long userId, TodoItem todoItem) 

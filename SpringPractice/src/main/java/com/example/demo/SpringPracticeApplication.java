@@ -10,9 +10,11 @@ public class SpringPracticeApplication
 	/*  
 		REST API Endpoints
 
+        Users:
         createUser: POST /api/users
         deleteUser: DELETE /api/users/{userId}
 
+        Todo Actions:
         getUserTodos: GET /api/users/{userId}/todo  
         getUserTodo: GET /api/users/{userId}/todo/{todoItemId}
         createUserTodo: POST /api/users/{userId}/todo
